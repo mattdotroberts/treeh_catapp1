@@ -15,7 +15,7 @@ function fetchData(url) {
 
 Promise.all([
   fetchData('https://dog.ceo/api/breeds/list'),
-  fetchData('https://dog.ceo/api/breeds/image/random')  
+  fetchData('https://aws.random.cat/meow')  
 ])
 .then(data => {
   const breedList = data[0].message;
